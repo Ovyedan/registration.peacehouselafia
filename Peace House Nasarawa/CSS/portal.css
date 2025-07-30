@@ -1,0 +1,341 @@
+@charset "utf-8";
+*, body, html{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: #fff;
+  height: 100vh;
+}
+/* this is my navbar */
+
+
+.navbar{
+    background-color: rgba(59, 0, 41, 0.959);
+    border-bottom: .2rem   solid rgb(59, 23, 0, .239,);
+    border-radius: 0 0 .6rem .6rem ;
+    display: flex;
+    justify-content: space-around;
+    /* padding: .5rem; */
+    font-family: sans-serif;
+    margin-bottom: .2rem;
+}
+  .nav1{
+    color: #ffffff;
+    padding-right: 2rem;
+    border-right: .3rem solid rgb(243, 239, 239);
+    font-weight: 900;
+    font-size: 1.5rem;
+ }
+ .nav2, .nav3{
+    padding: .5rem 0 .5rem 0;
+ }
+
+ .nav31{
+    text-align: center;
+ }
+
+ .home{
+    color: blue;
+    padding: .3rem 1rem .5rem .2rem;
+    font-size: 1rem;
+    text-decoration: none;
+ }
+ .link{
+    color: gray;
+ }
+
+ .portal{
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+ }
+
+  /* My left content css */
+  .mainLeft-content{
+    height: 900px;
+  }
+.left-content{
+  margin: 0;
+  padding: 0;
+}
+.portal-content{
+  margin: 0;
+  border-bottom: .1rem solid rgb(211, 7, 7);
+  border-radius: 0 0 .5rem .5rem;
+  background: linear-gradient(to bottom, rgba(141, 9, 90, 0.651), rgba(58, 253, 139, 0.24)), url(../images/fingers\ on\ lap.jpg);
+  color: #23037a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.877);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.program-registration{
+  max-width: 1200px; 
+  margin: 2px auto;
+  text-align: center;
+}
+
+.program-head{
+  display: inline-block;
+  padding: .5rem;
+  background: green;
+  color: yellow;
+  margin: 2rem 0;
+}
+
+.programs{
+  display: flex;
+  gap: 15px;
+}
+
+.program1{
+  position: relative;
+  padding: 4rem;
+  border-radius: .2rem;
+  background: url(../images/livingseededit_sized.png);
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.program1:hover {
+filter: brightness(50%);
+}
+
+.program1 .program-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.program1:hover .program-title{
+  opacity: 1;
+}
+
+h5{
+  background-color: rgb(255, 255, 255);
+  border: solid 0.1rem rgb(99, 99, 99);
+  border-radius: .2rem;
+  padding: .5rem;
+  color: #025c27;
+}
+
+footer{
+  margin-top: 20rem;
+  padding: .6rem 2rem;
+  border-top: .2rem solid rgba(46, 42, 46, 0.959);
+}
+
+
+/* my right column css */
+.right-content{
+  height: 1220px;
+  
+}
+
+.right-content, h2{
+  background-color: rgba(46, 42, 46, 0.959);
+  margin: 0;
+  padding: 0;
+}
+
+ h2{
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+ }
+ .profile{
+  max-width: 5px auto ;
+  padding: 2rem 0 2rem 2rem;
+  color: #fff ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  gap: .9rem;
+ }
+ .profili-img{
+  border-radius: 50%;
+ }
+ .code{
+  text-align: center;
+  margin-top: -1.3rem;
+  padding-bottom: .7rem;
+  color: red;
+ }
+ .menu{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+ 
+ }
+ button{
+  border: none;
+  background: none;
+ }
+ .logout{
+  color: #f34646;
+ }
+ .dropdown{
+  display: none;
+ }
+ 
+   /* Responsive design */
+
+  /* css for ipads */
+
+  @media(max-width: 1380px){
+
+    .right-content{
+      height: 2700px;
+    }
+    .program-registration{
+      max-width: 800px; 
+    }
+
+    .programs{
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .program1{
+      height: 400px;
+      width: 600px;
+    }
+    footer{
+      margin-top: 16rem;
+     }
+  }  
+
+
+  /* css for phones and tablets */
+ @media (max-width: 768px) {
+   body, html{
+     background-color: #fff;
+     font-size: .7rem;}
+
+    .nav1{
+      font-size: .9rem;
+    }
+    .portal{
+      grid-template-columns: 1fr;
+    }
+  .portal-content{
+      margin: 0;
+      border-bottom: .1rem solid rgb(211, 7, 7);
+      border-radius: 0 0 .5rem .5rem;
+      background: linear-gradient(to bottom, rgba(141, 9, 90, 0.651), rgba(58, 253, 139, 0.24)), url(../images/fingers\ on\ lap.jpg);
+      color: #23037a;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.877);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .program-registration{
+      max-width: 500px; 
+    }
+
+    .programs{
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .program1{
+      height: 300px;
+      width: 500px;
+    }
+
+    h5{
+      border: none;
+    }
+
+    .right-content{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;      
+    }
+
+    .dropdown{
+      display: block;
+      display: flex;
+      margin: 0;
+      margin-left: 1rem;
+      padding: 0;
+      width: 100%;
+     }
+
+     .profile{
+      padding-right: 1rem;
+     }
+     .menu{
+      justify-content: start;
+      padding-left: .6rem;
+     }
+
+     footer{
+      margin-top: 6rem;
+     }
+ }
+
+
+ /* css for smaller phones */
+@media(max-width:480px){
+  body,html{
+      font-size: .8rem;
+     }
+    
+     .portal-content{
+      background: linear-gradient(to bottom, rgba(141, 9, 90, 0.651), rgba(58, 253, 139, 0.24)), url(../images/fingers\ on\ laptop\ web.jpg);
+      color: #23037a;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.877);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:  center;
+      height: 400px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    
+.program1{
+  position: relative;
+  padding: 2rem;
+  border-radius: .2rem;
+  background: url(../images/livingseededit_sized.png);
+  width: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+}
