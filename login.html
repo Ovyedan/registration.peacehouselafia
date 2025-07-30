@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../CSS/log.css">
+</head>
+
+<body>
+
+  
+    <!-- ..........................Navbar............................... -->
+<nav class="navbar">
+  <div class="nav1">Peace House Revival Labour Nasarawa State</div>
+  <div class="home"><a href="index.html" class="home">Home</a></div>
+  <div class="nav2">
+      <div class="nav21" ><a href="" class="link">Retrieve PHN-Code</a></div>
+      <div><a href="" class="link">FAQ</a></div>
+  </div>
+  </div>
+  <div class="nav3">
+      <div class="nav31"><a href="../html/login.html" class="link">Login</a></div>
+      <div><a href="../html/register.html" class="link">Obtain a PHN-Code</a></div>
+  </div>
+</nav>
+
+<section class="login">
+
+ 
+   <!-- My login section -->
+  <div class="login-section">
+  <p>Please enter your NPH-Code to log in</p>
+  <form id="loginForm">
+    <label for="userId">NPH-Code:</label>
+    <input type="text" id="userId" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+
+    <button type="submit">Login</button>
+    <h5><a href="">Forgotten password</a></h5>
+  </form>
+</div>
+
+</section>
+  
+<footer class="footer">
+  <p>&copy; 2025<!--<span id="year"></span>--> Peace House Lafia. <span>All rights reserved</span> </p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear;
+</script>
+  <script src="../js/login.js"></script>
+</body>
+</html>

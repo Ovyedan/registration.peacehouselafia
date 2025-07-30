@@ -1,0 +1,179 @@
+*, body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+/*    general web css */
+body {
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+   /* nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+  } * */
+   /* .form{
+     display: flex; 
+    align-items: center; 
+    
+  } */
+
+  /*      my registration page */
+.registration-body{
+  display: block;
+  background-image: url(../images/slide3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  
+
+
+}
+#registration-section{
+ max-width: 800px;
+ margin: 20px auto;
+}
+
+  #registrationForm {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-sizing: content-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, button, select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+ 
+  label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #006622;
+  }
+  button {
+    background-color: #006622;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #029433;
+  }
+  
+  .printable {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 200px;
+    text-align: center;
+  }
+  
+ /* Responsive design */
+
+  /* css for ipads */
+
+  @media(max-width: 1380px){
+    body{
+      background-color: #ffffff;
+      height: 100%;
+    }
+
+    .registration-body{
+      height: 110rem;
+    }
+    #registration-section{
+      max-width: 900px;
+      margin-top: 100px;
+    }
+
+
+      form {
+        padding: 25px;
+      }
+
+    .footer {
+      padding: .5rem;
+    }
+  }
+
+  /* android and tablets */
+@media (max-width: 768px) {
+  body, html{
+    font-size: .9rem;
+   }
+   .registration-body{
+    display: block;
+    background-image: url(../images/slide3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+    #registration-section{
+      max-width: 500px;
+      margin: 15px auto;}
+  form {
+    padding: 15px;
+  }
+
+  input, select, textarea {
+    font-size: 0.9em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+  
+}
+
+/* css for smaller phones */
+@media(max-width:480px){
+  body, html{
+    font-size: .7rem;
+   }
+   .registration-body{
+    display: block;
+    background-image: url(../images/slide3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #registration-section{
+    max-width: 350px;
+    margin: 10px auto;
+  }
+}
+  /* My portal  */
+
+  

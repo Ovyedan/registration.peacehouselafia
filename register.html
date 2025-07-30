@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style1.css">
+</head>
+<header class="registration-header" id="Registration-header">
+  <nav class="navbar">
+    <div class="nav1">Peace House Revival Labour Nasarawa State</div>
+    <div class="home"><a href="index.html" class="home">Home</a></div>
+    <div class="nav2">
+        <div class="nav21" ><a href="" class="link">Retrieve PHN-Code</a></div>
+        <div><a href="" class="link">FAQ</a></div>
+    </div>
+    </div>
+    <div class="nav3">
+        <div class="nav31"><a href="../html/login.html" class="link">Login</a></div>
+        <div><a href="../html/register.html" class="link">Obtain a PHN-Code</a></div>
+    </div>
+  </nav>
+  
+</header>
+
+<body>
+
+  <main class="registration-body">
+    <section id="registration-section">
+      <div class="form">
+       <form id="registrationForm">
+
+        <h3 class="head" >Generate your NPH-Code</h3>
+
+        <label for="title">Title</label>
+          <select name="title" id="title"  required>
+            <option value=""disabled selected >Please select </option>
+            <option value="Brother">Brother</option>
+            <option value="Sister">Sister</option>
+            <option value="Miss">Miss</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Dr">Dr.</option>
+            <option value="Pastor">Pastor</option>
+            <option value="Pastor (Mrs)">Pastor (Mrs)</option>
+            <option value="Apostle">Apostle</option>
+            <option value="Reverend">Reverend</option>
+            <option value="Bishop">Bishop</option>
+          </select><br>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname"  placeholder="Father's name" required><br>
+        <label for="name" >Name:</label>
+        <input type="text" id="name" placeholder="First name" required><br>
+        <label for="otherNames" >Other Names:</label>
+        <input type="text" id="otherNames" placeholder="middle name"><br>
+        <label for="name">Address:</label>
+        <input type="text" name="Address" placeholder="Residential Address" required  ><br>
+        <div>
+          <label for="LGA">LGA of Residence</label>
+          <select name="Residence-lga" id="LGA" required>
+              <option value=""disabled selected >Please select </option>
+              <option value="AWE">Awe</option>
+              <option value="AKW">Akwanga</option>
+              <option value="DOM">Doma</option>
+              <option value="KAR">Karu</option>
+              <option value="KEA">Keana</option>
+              <option value="KEF">Keffi</option>
+              <option value="KOK">Kokona</option>
+              <option value="LAF">Lafia</option>
+              <option value="NAS">Nasarawa</option>
+              <option value="NEG">Nasarawa Eggon</option>
+              <option value="OBI">Obi</option>
+              <option value="TOT">Toto</option>
+              <option value="WAM">Wamba</option>
+              <option value="FP">Not Residing in Nasarawa State</option>
+          </select>
+          <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option value="" disabled selected>Select your gender</option>
+              <option value="M">Male</option>
+              <option value="F">Female</option>
+            </select>
+            <label class="dob" for="date of birth">Date of birth</label>
+            <input class="dob" id="dob" type="date" required>
+        
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="example reg@example.co"><br>
+        <label for="phone number">Phone Number:</label>
+        <input type="number" id="phone" placeholder="08000000000" required><br>
+
+        <label for="password" >Password:</label>
+        <input type="password" id="password" placeholder="Password" required><br>
+
+        <label for="confirmed-password"></label>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        
+        <button type="submit">Register</button>
+      </form>
+                    <!-- End of Form -->
+
+    </div>
+    </section>
+
+
+  </main>
+  <footer class="footer">
+  <p>&copy; 2025<!--<span id="year"></span>--> Peace House Lafia. <span>All rights reserved</span> </p>
+  </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear;
+</script>
+
+  <script src="../js/register.js"></script>
+</body>
+</html>

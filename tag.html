@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print tag</title>
+  <link rel="stylesheet" href="../CSS/tag.css">
+</head>
+<body>
+
+   <!-- <button onclick="printTag()">Print Participant Tag</button> -->
+    
+  <!-- Tag Preview Button -->
+
+  <!-- Tag Preview Area (Hidden by Default) -->
+   <div>
+  
+  <div id="tagPreview" class="tag">
+   <div class="tagImage" id="tagImage" style="position: relative; width: 100%;">
+    <img class="tagImagetop" id="tagImagetop" src="../images/livingseededit_sized.png" alt="Living Seed Image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+    <h2 class="year">2025</h2>
+    <h3 class="program">Christian Youth Convention <br> CYC </h3>
+    <!-- <h4>Nasarawa Revival Labours </h4> -->
+   </div> <hr>
+    <h2>Nasarawa State Peace House Revival Labours</h2> <hr>
+    <div class="participantsDetails" id="participantsDetails">
+      <div class="profileImage" id="profileImage" style="position: relative; width: 35%;">
+        <img src="../images/profile image.png" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+      </div>
+      <div class="profileDetail">
+        <p> <span id="tagTitle"></span></p>
+        <h1 id="surname"><span id="tagSurname"></span></h1>
+        <h3> <span id="tagName" ></span></h3> <hr>
+        <div class="meetingDetails">
+          <p class="otherDetails" id="tagOccupation"></p>
+          <p class="otherDetails" id="tagResidential"></p>
+        </div>
+       
+        <!-- <h4> <span  id="tagOtherNames"></span></h4> -->
+      </div> 
+    </div> <hr>
+    <h3>NPH code: <span id="tagUserId"></span></h3>
+  </div>
+</div>
+<div class="button">
+  <button class="no-print" onclick="printTag()">Print Participant Tag</button>
+   <button class="no-print" onclick="exportToPDF()">Export to PDF</button>
+   <button class="no-print"  onclick="backToPortal()">Back to Portal</button>
+</div>
+   
+  <script src="../js/tag.js"></script>
+  
+</body>
+</html>
