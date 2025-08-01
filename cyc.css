@@ -24,7 +24,7 @@ body, html {
 header {
   content: "";
   text-align: center;
-  background:  url(../images/livingseededit_sized.png);
+  background:  url(livingseededit_sized.png);
   background-position: cover;
   background-size: cover;
   background-repeat: no-repeat;
